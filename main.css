@@ -1,0 +1,373 @@
+@font-face {
+  font-family: OpenSansHebrew-Regular;
+  src: url("../fonts/OpenSansHebrew-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-Ligh;
+  src: url("../fonts/OpenSansHebrew-Light.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-Bold;
+  src: url("../fonts/OpenSansHebrew-Bold.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-ExtraBold;
+  src: url("../fonts/OpenSansHebrew-ExtraBold.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-Regular;
+  src: url("../fonts/OpenSansHebrew-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-Ligh;
+  src: url("../fonts/OpenSansHebrew-Light.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-Bold;
+  src: url("../fonts/OpenSansHebrew-Bold.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-ExtraBold;
+  src: url("../fonts/OpenSansHebrew-ExtraBold.ttf");
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0D1555;
+  outline: none;
+  border-radius: 74px;
+  box-shadow: red;
+}
+
+@font-face {
+  font-family: OpenSansHebrew-Regular;
+  src: url("../fonts/OpenSansHebrew-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-Ligh;
+  src: url("../fonts/OpenSansHebrew-Light.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-Bold;
+  src: url("../fonts/OpenSansHebrew-Bold.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-ExtraBold;
+  src: url("../fonts/OpenSansHebrew-ExtraBold.ttf");
+}
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- $desktop
+- $laptop
+- $tablet
+- $mobile
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- $desktop
+- $laptop
+- $tablet
+- $mobile
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@font-face {
+  font-family: OpenSansHebrew-Regular;
+  src: url("../fonts/OpenSansHebrew-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-Ligh;
+  src: url("../fonts/OpenSansHebrew-Light.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-Bold;
+  src: url("../fonts/OpenSansHebrew-Bold.ttf");
+}
+@font-face {
+  font-family: OpenSansHebrew-ExtraBold;
+  src: url("../fonts/OpenSansHebrew-ExtraBold.ttf");
+}
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- $desktop
+- $laptop
+- $tablet
+- $mobile
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+.rst__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100.166rem;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container {
+    padding-inline: 2.666rem;
+  }
+}
+.rst__container h1.rst__title {
+  padding: 0;
+  margin: 0;
+  color: #0D1555;
+  font-size: 3.333rem;
+  font-family: OpenSansHebrew-Bold, sans-serif;
+  margin-block-end: 1.833rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container h1.rst__title {
+    margin-block-end: 6.833rem;
+    font-size: 2.666rem;
+  }
+}
+.rst__container .rst__expand-container {
+  box-shadow: 0px 0px 33px 0px #0000000F;
+  background: white;
+}
+.rst__container .rst__expand-container ul.rst__expander {
+  list-style: none;
+  padding-inline: 10.416rem;
+  margin: 0;
+  perspective: 900px;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container .rst__expand-container ul.rst__expander {
+    padding-inline: 0.333rem;
+    padding-block: 3rem;
+  }
+}
+.rst__container .rst__expand-container ul.rst__expander li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 1.666rem;
+  font-family: OpenSansHebrew-Bold, sans-serif;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container .rst__expand-container ul.rst__expander li {
+    padding-inline: 2rem;
+  }
+}
+.rst__container .rst__expand-container ul.rst__expander li:last-of-type {
+  padding-block-end: 0;
+}
+.rst__container .rst__expand-container ul.rst__expander li:last-of-type h2.rst__expander-label {
+  border: 0;
+}
+.rst__container .rst__expand-container ul.rst__expander li:last-of-type h2.rst__expander-label.opened {
+  border-bottom: 1px solid #dce7eb;
+}
+.rst__container .rst__expand-container ul.rst__expander li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  display: inline-block;
+  min-height: 7.5rem;
+  z-index: 1;
+  opacity: 0;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container .rst__expand-container ul.rst__expander li input[type=checkbox] {
+    width: calc(100% - 2rem);
+  }
+}
+.rst__container .rst__expand-container ul.rst__expander li input[type=checkbox]:checked ~ div.rst__grid {
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+  margin: 0;
+}
+.rst__container .rst__expand-container ul.rst__expander li input[type=checkbox]:checked ~ i:after {
+  transform: rotate(180deg) !important;
+  transform-origin: center center;
+}
+.rst__container .rst__expand-container ul.rst__expander li i {
+  position: absolute;
+  margin-block-start: 6.5rem;
+  inset-inline-end: 1.333rem;
+  transform: rotate(180deg) translateY(19px) !important;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container .rst__expand-container ul.rst__expander li i {
+    transform: rotate(180deg) translateY(11px) !important;
+    inset-inline-end: 2.333rem;
+  }
+}
+.rst__container .rst__expand-container ul.rst__expander li i:before, .rst__container .rst__expand-container ul.rst__expander li i:after {
+  content: "";
+  position: absolute;
+}
+.rst__container .rst__expand-container ul.rst__expander li i:after {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s 0.1s linear;
+  background-image: url("../../assets/icons/expand_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container .rst__expand-container ul.rst__expander li i:after {
+    width: 13px;
+    height: 13px;
+  }
+}
+.rst__container .rst__expand-container ul.rst__expander h2.rst__expander-label {
+  border-bottom: 1px solid #dce7eb;
+  margin: 0;
+  min-height: 7.5rem;
+  display: flex;
+  align-items: center;
+  color: #152D66;
+  font-size: 1.666rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container .rst__expand-container ul.rst__expander h2.rst__expander-label {
+    padding-inline-start: 2rem;
+    padding-inline-end: 7rem;
+    border-bottom: 1px solid #dce7eb;
+    font-size: 1.333rem;
+  }
+}
+.rst__container .rst__expand-container ul.rst__expander .rst__grid {
+  background: #F9FAFA;
+}
+.rst__container .rst__expand-container ul.rst__expander .rst__grid-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 5rem;
+  padding-block: 2.666rem;
+  padding-inline: 2.666rem;
+  align-items: center;
+  border-bottom: 1px solid #dce7eb;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container .rst__expand-container ul.rst__expander .rst__grid-row {
+    grid-template-columns: 1fr;
+    border-bottom: 0;
+  }
+}
+.rst__container .rst__expand-container ul.rst__expander .rst__grid-row:last-child {
+  border-bottom: 0;
+}
+.rst__container .rst__expand-container ul.rst__expander .rst__grid-row .rst__grid-row-place {
+  color: #152D66;
+  font-family: OpenSansHebrew-Regular, sans-serif;
+  font-weight: 400;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container .rst__expand-container ul.rst__expander .rst__grid-row .rst__grid-row-place {
+    font-size: 1.333rem;
+  }
+}
+.rst__container .rst__expand-container ul.rst__expander .rst__grid-row div.rst__grid-col-left {
+  display: flex;
+  column-gap: 5.333rem;
+  align-items: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container .rst__expand-container ul.rst__expander .rst__grid-row div.rst__grid-col-left {
+    justify-content: space-between;
+    width: 100%;
+    margin-block-start: 1rem;
+  }
+}
+.rst__container .rst__expand-container ul.rst__expander .rst__grid-row div.rst__grid-col-left span.rst__grid-price {
+  color: #152D66;
+  font-family: OpenSansHebrew-Bold, sans-serif;
+  font-size: 2.166rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container .rst__expand-container ul.rst__expander .rst__grid-row div.rst__grid-col-left span.rst__grid-price {
+    font-size: 1.333rem;
+  }
+}
+.rst__container .rst__expand-container ul.rst__expander .rst__grid-row div.rst__grid-col-left button.rst__btn-primary {
+  background: #0D1555;
+  color: #ffffff;
+  padding: 0.5rem 2.666rem 0.583rem 2.666rem;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.rst__container .rst__expand-container ul.rst__expander .rst__grid .rst__divider {
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .rst__container .rst__expand-container ul.rst__expander .rst__grid .rst__divider {
+    display: block;
+    margin-block: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    height: 1px;
+    background: #dce7eb;
+  }
+}
+
+html {
+  direction: rtl;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
